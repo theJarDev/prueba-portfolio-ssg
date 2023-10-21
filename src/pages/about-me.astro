@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageTitle from "../components/PageTitle.astro";
+import About from "../components/About.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import SkillCard from "../components/SkillCard.astro";
+import html from '../assets/html5.svg';
+import css from '../assets/css3.svg';
+import javascript from '../assets/javascript.svg';
+import react from '../assets/react.svg';
+import astrx from '../assets/astro.svg';
+import tailwind from '../assets/tailwind.svg';
+import git from '../assets/git.svg';
+---
+
+<Layout title="JarDev | About me">
+    <PageTitle page="about-me" description="Get to know me better"/>
+    <SectionContainer title="who-am-i?" viewAll={false} href="">
+        <About showBtn={false} linesToShow={50} />
+    </SectionContainer>
+    <!-- <section class="flex flex-col mt-8 pl-8 pr-8 md:mt-12 lg:pl-32 lg:pr-32 xl:mt-16 xl:pl-36 xl:pr-36 2xl:pl-56 2xl:pr-56">
+        <About />
+    </section> -->
+    <SectionContainer title='my-skills' viewAll={false} href='' >
+        <SkillCard img={html} tecnology='HTML' mainColor='#d73913' secondaryColor='#d7391333' />
+		<SkillCard img={css} tecnology='CSS' mainColor='#264de4' secondaryColor='#264de433' />
+		<SkillCard img={javascript} tecnology='JavaScript' mainColor='#f7e01d' secondaryColor='#f7e01d33' />
+		<SkillCard img={react} tecnology='React' mainColor='#61dafb' secondaryColor='#61dafb33' />
+		<SkillCard img={astrx} tecnology='Astro' mainColor='#ff5d01' secondaryColor='#ff5d0133' />
+		<SkillCard img={tailwind} tecnology='Tailwind CSS' mainColor='#12ccb7' secondaryColor='#12ccb733' />
+		<SkillCard img={git} tecnology='GIT' mainColor='#df4c37' secondaryColor='#df4c3733' />
+    </SectionContainer>
+</Layout>

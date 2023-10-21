@@ -1,0 +1,128 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import PageTitle from "../components/PageTitle.astro";
+//images
+import skillsflix from '../assets/Skillsflix.webp';
+import skillsflix2 from '../assets/skillsflix2.webp';
+import alurageek from '../assets/AluraGeek.webp';
+import alurageek2 from '../assets/alurageek2.webp';
+import org from '../assets/org.webp';
+import org2 from '../assets/org2.webp';
+import portfolio from '../assets/portfolio.webp';
+import portfolio2 from '../assets/portfolio2.webp';
+import blackjack from '../assets/blackjack.webp';
+import blackjack2 from '../assets/blackjack2.webp';
+import todoapp from '../assets/todoapp.webp';
+import todoapp2 from '../assets/todoapp2.webp';
+import dinorun from '../assets/dinorun.webp';
+import dinorun2 from '../assets/dinorun2.webp';
+import ecommercecpp from '../assets/ecommercecpp.webp';
+import ecommercecpp2 from '../assets/ecommercecpp2.webp';
+import fruitknight from '../assets/fruitknight.webp';
+import fruitknight2 from '../assets/fruitknight2.webp';
+import calculator from '../assets/calculator.webp';
+import calculator2 from '../assets/calculator2.webp';
+---
+
+<Layout title="JarDev | Projects">
+    <PageTitle page="projects" description="List of all my projects" />
+    <SectionContainer title="web-development" viewAll={false} href="">
+        <ProjectCard
+			img1={skillsflix}
+			img2={skillsflix2}
+			tecnologies='React Styled-Components Material-UI HTML'
+			title='SkillsFlix'
+			description='Video platform with crud methods from fake api. Oracle Next Education Challenge'
+			link='https://skillsflix.vercel.app/'
+			github='https://github.com/theJarDev/skillsflix'
+		/>
+		<ProjectCard
+			img1={alurageek}
+			img2={alurageek2}
+			tecnologies='JavaScript HTML CSS'
+			title='AluraGeek'
+			description='Admin side e-commerce with crud methods from fake api. Oracle Next Education Challenge'
+			link='https://thejardev.github.io/alura-geek/'
+			github='https://github.com/theJarDev/alura-geek'
+		/>
+		<ProjectCard
+			img1={org}
+			img2={org2}
+			tecnologies='React HTML CSS'
+			title='Org'
+			description='App for team organization. Oracle Next Education Challenge'
+			link='https://org-project.vercel.app'
+			github='https://github.com/theJarDev/org'
+		/>
+		<ProjectCard
+			img1={portfolio}
+			img2={portfolio2}
+			tecnologies='Astro Tailwind CSS'
+			title='Portfolio'
+			description='My portfolio. The website where you are right now'
+			link='https://jardev.vercel.app/'
+			github='https://github.com/theJarDev/portfolio'
+		/>
+		<ProjectCard
+			img1={todoapp}
+			img2={todoapp2}
+			tecnologies='JavaScript HTML CSS'
+			title='To-Do App'
+			description='App for personal tasks organization. Works with local storage'
+			link='https://todoapp-jardev.vercel.app'
+			github='https://github.com/theJarDev/todoapp'
+		/>
+		<ProjectCard
+			img1={blackjack}
+			img2={blackjack2}
+			tecnologies='JavaScript HTML CSS'
+			title='Blackjack'
+			description='Single player blackjack game. Try to win to CPU'
+			link='https://js-blackjack-vite.vercel.app'
+			github='https://github.com/theJarDev/js-vite-blackjack'
+		/>
+    </SectionContainer>
+    <SectionContainer title="other-projects" viewAll={false} href="">
+        <ProjectCard
+			img1={dinorun}
+			img2={dinorun2}
+			tecnologies='Assembly WindowsAPI'
+			title='DinoRun'
+			description='2D videogame made with Assembly and WinAPI. University project'
+			link='https://www.youtube.com/watch?v=JFknK5Auycw'
+			github='https://github.com/theJarDev/dinorun'
+			linkText="Demo"
+		/>
+        <ProjectCard
+			img1={ecommercecpp}
+			img2={ecommercecpp2}
+			tecnologies='C++ WindowsAPI'
+			title='E-commerce'
+			description='Desktop app made with C++ and WinAPI, using linked lists and dinamic memory. University project'
+			link='https://www.youtube.com/watch?v=C__m6V6FhwU'
+			github='https://github.com/theJarDev/PA-project'
+			linkText="Demo"
+		/>
+        <ProjectCard
+			img1={fruitknight}
+			img2={fruitknight2}
+			tecnologies='C# Unity'
+			title='Fruit Knight'
+			description='2D videogame made with Unity and C#. University project'
+			link='https://www.youtube.com/watch?v=1CgmMywOulU'
+			github='https://github.com/theJarDev/haptics-design_videogame'
+			linkText="Demo"
+		/>
+        <ProjectCard
+			img1={calculator}
+			img2={calculator2}
+			tecnologies='C++'
+			title='Matrice calculator'
+			description='Algorithm that resolve matrice and vector operations. University project'
+			link=''
+			github='https://github.com/theJarDev/matrice-calculator'
+		/>
+    </SectionContainer>
+</Layout>

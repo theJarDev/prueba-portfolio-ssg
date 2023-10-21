@@ -1,0 +1,36 @@
+---
+---
+
+<header>
+    <div class="flex justify-between items-center pt-4 pb-4 pl-8 pr-8  lg:pl-32 lg:pr-32 xl:pt-8 xl:pb-8 xl:pl-36 xl:pr-36 2xl:pl-56 2xl:pr-56">
+        <a class="flex items-center" href="/">
+            <h2 class="text-3xl font-bold text-white 2xl:text-5xl">JarDev</h2>
+        </a>
+        <nav class="flex items-center gap-8">
+            <ul class="hidden lg:flex items-center lg:gap-8">
+                <li><a class="item" href="/"><span class="character text-[#C778DD] text-base 2xl:text-xl">#</span><span class="text text-base 2xl:text-xl">home</span></a></li>
+                <li><a class="item" href="/projects"><span class="character text-[#C778DD] text-base 2xl:text-xl">#</span><span class="text text-base 2xl:text-xl">projects</span></a></li>
+                <li><a class="item" href="/about-me"><span class="character text-[#C778DD] text-base 2xl:text-xl">#</span><span class="text text-base 2xl:text-xl">about-me</span></a></li>
+            </ul>
+            <select class="bg-transparent cursor-pointer 2xl:text-lg">
+                <option class="bg-[#282C33]" value="en">EN</option>
+                <option class="bg-[#282C33]" value="es">ES</option>
+            </select>
+        </nav>
+    </div>
+</header>
+
+<style>
+    .item:hover .text{
+        color: #ABB2BF;
+    }
+    .item:hover .character{
+        color: #c778dd85;
+    }
+    
+	@media (min-width: 1921px) {
+		header {
+			width: 1900px;
+		}
+	}
+</style>

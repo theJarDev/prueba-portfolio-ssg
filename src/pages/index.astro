@@ -1,0 +1,93 @@
+---
+//components
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import SkillCard from '../components/SkillCard.astro';
+import EducationCard from '../components/EducationCard.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+
+//images
+import skillsflix from '../assets/Skillsflix.webp';
+import skillsflix2 from '../assets/skillsflix2.webp';
+import alurageek from '../assets/AluraGeek.webp';
+import alurageek2 from '../assets/alurageek2.webp';
+import org from '../assets/org.webp';
+import org2 from '../assets/org2.webp';
+import todoapp from '../assets/todoapp.webp';
+import todoapp2 from '../assets/todoapp2.webp';
+import html from '../assets/html5.svg';
+import css from '../assets/css3.svg';
+import javascript from '../assets/javascript.svg';
+import react from '../assets/react.svg';
+import astrx from '../assets/astro.svg';
+import tailwind from '../assets/tailwind.svg';
+import git from '../assets/git.svg';
+import fcfm from '../assets/fcfm4.webp';
+import one from '../assets/one2.webp';
+
+---
+
+<Layout title="JarDev">
+	<Hero />
+	<SectionContainer title='projects' viewAll={true} href='/projects' >
+		<ProjectCard
+			img1={skillsflix}
+			img2={skillsflix2}
+			tecnologies='React Styled-Components Material-UI HTML'
+			title='SkillsFlix'
+			description='Video platform with crud methods from fake api. Oracle Next Education Challenge'
+			link='https://skillsflix.vercel.app/'
+			github='https://github.com/theJarDev/skillsflix'
+		/>
+		<ProjectCard
+			img1={alurageek}
+			img2={alurageek2}
+			tecnologies='JavaScript HTML CSS'
+			title='AluraGeek'
+			description='Admin side e-commerce with crud methods from fake api. Oracle Next Education Challenge'
+			link='https://thejardev.github.io/alura-geek/'
+			github='https://github.com/theJarDev/alura-geek'
+		/>
+		<ProjectCard
+			img1={org}
+			img2={org2}
+			tecnologies='React HTML CSS'
+			title='Org'
+			description='App for team organization. Oracle Next Education Challenge'
+			link='https://org-project.vercel.app'
+			github='https://github.com/theJarDev/org'
+		/>
+		<ProjectCard
+			img1={todoapp}
+			img2={todoapp2}
+			tecnologies='JavaScript HTML CSS'
+			title='To-Do App'
+			description='App for personal tasks organization. Works with local storage'
+			link='https://todoapp-jardev.vercel.app'
+			github='https://github.com/theJarDev/todoapp'
+		/>
+	</SectionContainer>
+	<SectionContainer title='skills' viewAll={false} href='/' >
+		<SkillCard img={html} tecnology='HTML' mainColor='#d73913' secondaryColor='#d7391333' />
+		<SkillCard img={css} tecnology='CSS' mainColor='#264de4' secondaryColor='#264de433' />
+		<SkillCard img={javascript} tecnology='JavaScript' mainColor='#f7e01d' secondaryColor='#f7e01d33' />
+		<SkillCard img={react} tecnology='React' mainColor='#61dafb' secondaryColor='#61dafb33' />
+		<SkillCard img={astrx} tecnology='Astro' mainColor='#ff5d01' secondaryColor='#ff5d0133' />
+		<SkillCard img={tailwind} tecnology='Tailwind CSS' mainColor='#12ccb7' secondaryColor='#12ccb733' />
+		<SkillCard img={git} tecnology='GIT' mainColor='#df4c37' secondaryColor='#df4c3733' />
+	</SectionContainer>
+	<SectionContainer title='education' viewAll={false} href='' >
+		<EducationCard img={fcfm} year='2020' school='UANL' career='Degree in Multimedia and Digital Animation' />
+		<EducationCard img={one} year='2023' school='Oracle/Alura Latam' career='Oracle Next Education' />
+	</SectionContainer>
+	<SectionContainer title='about-me' viewAll={false} href='/' >
+		<About showBtn linesToShow={10}/>
+	</SectionContainer>
+	<SectionContainer title='contact' viewAll={false} href='/' >
+		<Contact />
+	</SectionContainer>
+</Layout>
+

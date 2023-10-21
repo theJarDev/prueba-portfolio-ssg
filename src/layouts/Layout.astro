@@ -1,0 +1,60 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<title>{title}</title>
+		<ViewTransitions />
+		
+	</head>
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+<style is:global>
+	:root {
+		font-family: 'Fira Code', monospace;
+		font-size: 16px;
+		color: #dddddd;
+		box-sizing: border-box;
+	}
+	body {
+		background: #282c33;
+		/* background: rgb(245,225,255);
+		background: radial-gradient(circle, rgba(245,225,255,1) 0%, rgba(245,245,245,1) 70%); */
+	}
+
+	@media (min-width: 1921px) {
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		main {
+			width: 1900px;
+		}
+	}
+	
+</style>

@@ -1,0 +1,16 @@
+---
+interface Props {
+    page:string,
+    description:string
+}
+
+const { page, description } = Astro.props
+---
+
+<section class="flex flex-col mt-8 pl-8 pr-8 md:mt-16 lg:pl-32 lg:pr-32 xl:pl-36 xl:pr-36 2xl:mt-12 2xl:pl-56 2xl:pr-56">
+    <div class="flex items-center">
+        <span class="text-[#C778DD] font-semibold text-xl md:text-3xl">/</span>
+        <h1 class="text-white font-semibold text-xl md:text-3xl"> {page} </h1>
+    </div>
+    <span class="text-base font-normal"> {description} </span>
+</section>

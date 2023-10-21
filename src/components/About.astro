@@ -1,0 +1,43 @@
+---
+import chris from "../assets/chris1.webp";
+interface Props {
+    showBtn:boolean,
+    linesToShow:number
+}
+const { showBtn, linesToShow } = Astro.props;
+---
+
+<div class="flex flex-col items-center flex-wrap gap-8 w-full lg:flex-row lg:justify-between">
+    <img class="rounded-full object-cover w-60 h-60  md:mb-0 lg:w-72 lg:h-72 2xl:w-96 2xl:h-96" src={chris.src} alt="Christopher Jared">
+    <div class="flex flex-col gap-6">
+        <p class="text-base font-normal max-w-lg lg:max-w-md xl:max-w-lg 2xl:text-lg 2xl:max-w-2xl info">
+            Hello! I'm Christopher Jared, a passionate <span class="text-[#C778DD]">front-end developer</span> with a focus on React. I specialize in creating dynamic and user-friendly web interfaces. My experience includes working on a variety of projects, including the development of applications like SkillsFlix and AluraGeek e-commerce. These experiences have allowed me to master HTML, CSS, JavaScript, React, and other frameworks such as Astro and Tailwind.
+            <br><br>
+            I enjoy collaboration within cross-functional teams and have found that some of my most innovative solutions have emerged from group efforts. For instance, some projects such as the Matrix Calculator and Fruit Knight video game in this portfolio were the results of successful teamwork.
+            <br><br>
+            Outside of coding, you can find me working out in the gym, learning and practicing a new language, or experimenting in the kitchen. I'm excited to apply my skills and passion to create exceptional web solutions. Feel free to explore my portfolio, and let's work together to build the web of tomorrow!
+        </p>
+        {showBtn && <a href="/about-me" class="pt-2 pb-2 pl-4 pr-4 w-fit border-[1px] border-[#C778DD] live">Read more -></a>}
+    </div>
+</div>
+
+<style define:vars={{linesToShow}}>
+    .live:hover {
+        background-color: #c778dd33;
+        box-shadow: 0px 0px 5px 0px #C778DD;
+    }
+
+    p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: var(--linesToShow);
+    }
+
+    @media (min-width:1650px) {
+        .info{
+            max-width: 48rem;
+        }
+    }
+
+</style>
