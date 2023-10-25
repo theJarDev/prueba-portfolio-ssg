@@ -1,21 +1,25 @@
 ---
+import { t } from "i18next";
+import { LanguageSelector } from "astro-i18next/components";
+import { localizePath } from "astro-i18next";
 ---
 
 <header>
     <div class="flex justify-between items-center pt-4 pb-4 pl-8 pr-8  lg:pl-32 lg:pr-32 xl:pt-8 xl:pb-8 xl:pl-36 xl:pr-36 2xl:pl-56 2xl:pr-56">
-        <a class="flex items-center" href="/">
+        <a class="flex items-center" href={localizePath("/")}>
             <h2 class="text-3xl font-bold text-white 2xl:text-5xl">JarDev</h2>
         </a>
         <nav class="flex items-center gap-8">
             <ul class="hidden lg:flex items-center lg:gap-8">
-                <li><a class="item" href="/"><span class="character text-[#C778DD] text-base 2xl:text-xl">#</span><span class="text text-base 2xl:text-xl">home</span></a></li>
-                <li><a class="item" href="/projects"><span class="character text-[#C778DD] text-base 2xl:text-xl">#</span><span class="text text-base 2xl:text-xl">projects</span></a></li>
-                <li><a class="item" href="/about-me"><span class="character text-[#C778DD] text-base 2xl:text-xl">#</span><span class="text text-base 2xl:text-xl">about-me</span></a></li>
+                <li><a class="item" href={localizePath("/")}><span class="character text-[#C778DD] text-base 2xl:text-xl">#</span><span class="text text-base 2xl:text-xl"> {t("Header.home")} </span></a></li>
+                <li><a class="item" href={localizePath("/projects")}><span class="character text-[#C778DD] text-base 2xl:text-xl">#</span><span class="text text-base 2xl:text-xl"> {t("Header.projects")} </span></a></li>
+                <li><a class="item" href={localizePath("/about-me")}><span class="character text-[#C778DD] text-base 2xl:text-xl">#</span><span class="text text-base 2xl:text-xl"> {t("Header.about")} </span></a></li>
             </ul>
-            <select class="bg-transparent cursor-pointer 2xl:text-lg">
+            <LanguageSelector showFlag={true} class="my-select-class bg-transparent cursor-pointer 2xl:text-lg" />
+            <!-- <select class="bg-transparent cursor-pointer 2xl:text-lg">
                 <option class="bg-[#282C33]" value="en">EN</option>
                 <option class="bg-[#282C33]" value="es">ES</option>
-            </select>
+            </select> -->
         </nav>
     </div>
 </header>

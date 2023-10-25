@@ -1,19 +1,19 @@
 ---
 import i18next, { t, changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import PageTitle from "../components/PageTitle.astro";
-import About from "../components/About.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import SkillCard from "../components/SkillCard.astro";
-import html from "../assets/html5.svg";
-import css from "../assets/css3.svg";
-import javascript from "../assets/javascript.svg";
-import react from "../assets/react.svg";
-import astrx from "../assets/astro.svg";
-import tailwind from "../assets/tailwind.svg";
-import git from "../assets/git.svg";
+import Layout from "../../layouts/Layout.astro";
+import PageTitle from "../../components/PageTitle.astro";
+import About from "../../components/About.astro";
+import SectionContainer from "../../components/SectionContainer.astro";
+import SkillCard from "../../components/SkillCard.astro";
+import html from "../../assets/html5.svg";
+import css from "../../assets/css3.svg";
+import javascript from "../../assets/javascript.svg";
+import react from "../../assets/react.svg";
+import astrx from "../../assets/astro.svg";
+import tailwind from "../../assets/tailwind.svg";
+import git from "../../assets/git.svg";
 
-changeLanguage("en");
+changeLanguage("es");
 ---
 
 <Layout lang={i18next.language} title={t("Layout.titles.about")} description={t("Layout.description.about")}>

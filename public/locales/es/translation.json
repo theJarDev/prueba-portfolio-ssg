@@ -1,0 +1,112 @@
+
+{
+    "Header": {
+      "home": "inicio",
+      "projects": "proyectos",
+      "about": "sobre-mí"
+    },
+    "Hero": {
+      "greeting": "¡Hola!, soy Christopher Jared, un",
+      "position": "Desarrollador Front-End",
+      "city": " ubicado en Monterrey, NL"
+    },
+    "Projects": {
+        "skillsflix": {
+            "title": "SkillsFlix",
+            "description": "Plataforma de videos con métodos CRUD. Oracle Next Education Challenge"
+        },
+        "alurageek": {
+            "title": "AluraGeek",
+            "description": "E-commerce del lado del administrador con métodos CRUD. Oracle Next Education Challenge"
+        },
+        "org": {
+            "title": "Org",
+            "description": "Aplicación para la organización de equipos. Oracle Next Education Challenge"
+        },
+        "portfolio": {
+            "title": "Portafolio",
+            "description": "Mi portafolio. El sitio web donde se encuentra ahora mismo"
+        },
+        "todo": {
+            "title": "To-Do App",
+            "description": "Aplicación para la organización de tareas personales. Funciona con 'Local Storage'"
+        },
+        "blackjack": {
+            "title": "Blackjack",
+            "description": "Juego de blackjack de un solo jugador. ¡Intente ganar a la CPU!"
+        },
+        "dinorun": {
+            "title": "DinoRun",
+            "description": "Videojuego 2D hecho con lenguaje ensamblador y WinAPI. Proyecto de la universidad"
+        },
+        "ecommerce": {
+            "title": "E-commerce",
+            "description": "Aplicación de escritorio hecha con C++ y WinAPI, usando listas ligadas y memoria dinámica. Proyecto de la universidad"
+        },
+        "fruitknight": {
+            "title": "Fruit Knight",
+            "description": "Videojuego 2D hecho con C# y Unity. Proyecto de la universidad"
+        },
+        "matrix": {
+            "title": "Calculadora de Matrices",
+            "description": "Algoritmo que resuelve operaciones de matrices y vectores. Proyecto de la universidad"
+        }
+    },
+    "Education": {
+      "fcfm": "Licenciado en Multimedia y Animación Digital",
+      "one": "Oracle Next Education"
+    },
+    "About": {
+      "greeting": "¡Hola!, soy Christopher Jared, un apasionado ",
+      "position": "desarrollador Front-End",
+      "first": " con enfoque en React. Me especializo en crear interfaces web dinámicas y fáciles de usar. Mi experiencia incluye trabajar en una variedad de proyectos, incluyendo el desarrollo de aplicaciones como SkillsFlix y el e-commerce AluraGeek. Estas experiencias me han permitido dominar HTML, CSS, JavaScript, React y otros frameworks como Astro y Tailwind.",
+      "second": "Disfruto de la colaboración dentro de equipos multifuncionales y he descubierto que algunas de mis soluciones más innovadoras han surgido de esfuerzos grupales. Por ejemplo, algunos proyectos como la Calculadora de Matrices y el videojuego Fruit Knight en este portafolio fueron el resultado de un exitoso trabajo en equipo.",
+      "third": "Fuera del mundo de la programación, puedes encontrarme entrenando en el gimnasio, aprendiendo y practicando un nuevo idioma, o experimentando en la cocina. Estoy emocionado por aplicar mis habilidades y mi pasión para crear soluciones web excepcionales. ¡Siéntase libre de explorar mi portafolio, y trabajemos juntos en construir la web del mañana!",
+      "btn": "Leer más ->"
+    },
+    "Contact": {
+      "description": "Actualmente disponible para trabajar. Estoy interesado en trabajos a tiempo completo, sin embargo, si tiene otra solicitud o pregunta, no dude en contactarme",
+      "box": "Envíeme un mensaje aquí"
+    },
+    "Layout": {
+        "titles":{
+            "index": "JarDev",
+            "projects": "JarDev | Proyectos",
+            "about": "JarDev | Sobre mí"
+        },
+        "descriptions":{
+            "index": "Bienvenido a mi portafolio como desarrollador front-end. Explora mi mundo de diseño web interactivo y experiencias de usuario cautivadoras. Descubre cómo puedo convertir tus ideas en sitios web atractivos y funcionales.",
+            "projects": "Explora mi colección de proyectos de desarrollo front-end. Aquí encontrarás ejemplos de sitios web responsivos y aplicaciones web interactivas que he creado. Cada proyecto es una muestra de mi habilidad para combinar diseño creativo y programación sólida.",
+            "about": "¡Hola!, Soy un desarrollador front-end apasionado por la creación de experiencias web excepcionales. Conoce más sobre mi trayectoria, habilidades y mi compromiso de mantenerme al tanto de las últimas tendencias en desarrollo web. Estoy listo para colaborar en proyectos desafiantes y transformar tus ideas en sitios web visualmente atractivos y altamente funcionales."
+      }
+    },
+    "Pages": {
+      "projects": {
+            "title": "proyectos",
+            "description": "Lista de todos mis proyectos"
+        },
+      "about": {
+            "title": "sobre-mí",
+            "description": "Conózcame mejor"
+        }
+    },
+    "Sections": {
+        "view": "ver todos->",
+        "index": {
+            "projects": "proyectos",
+            "skills": "habilidades",
+            "education": "educación",
+            "about": "sobre-mí",
+            "contact": "contacto"
+        },
+        "projects": {
+            "web": "desarrollo-web",
+            "other": "otros-proyectos"
+        },
+        "about": {
+            "aboutme": "¿quién-soy?",
+            "myskills": "mis-habilidades"
+        }
+    },
+    "Footer": "Hecho por Christopher Jared "
+  }

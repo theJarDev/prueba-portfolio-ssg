@@ -1,0 +1,112 @@
+
+{
+    "Header": {
+      "home": "home",
+      "projects": "projects",
+      "about": "about-me"
+    },
+    "Hero": {
+      "greeting": "Hi!, I'm Christopher Jared, a",
+      "position": "Front-End developer",
+      "city": " based in Monterrey, NL"
+    },
+    "Projects": {
+        "skillsflix": {
+            "title": "SkillsFlix",
+            "description": "Video platform with CRUD methods. Oracle Next Education Challenge"
+        },
+        "alurageek": {
+            "title": "AluraGeek",
+            "description": "Admin side e-commerce with CRUD methods. Oracle Next Education Challenge"
+        },
+        "org": {
+            "title": "Org",
+            "description": "App for team organization. Oracle Next Education Challenge"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "My portfolio. The website where you are right now"
+        },
+        "todo": {
+            "title": "To-Do App",
+            "description": "App for personal tasks organization. Works with Local Storage"
+        },
+        "blackjack": {
+            "title": "Blackjack",
+            "description": "Single player blackjack game. Try to win to CPU!"
+        },
+        "dinorun": {
+            "title": "DinoRun",
+            "description": "2D videogame made with Assembly and WinAPI. University project"
+        },
+        "ecommerce": {
+            "title": "E-commerce",
+            "description": "Desktop app made with C++ and WinAPI, using linked lists and dinamic memory. University project"
+        },
+        "fruitknight": {
+            "title": "Fruit Knight",
+            "description": "2D videogame made with C# and Unity. University project"
+        },
+        "matrix": {
+            "title": "Matrix Caluculator",
+            "description": "Algorithm that resolve matrix and vector operations. University project"
+        }
+    },
+    "Education": {
+      "fcfm": "Degree in Multimedia and Digital Animation",
+      "one": "Oracle Next Education"
+    },
+    "About": {
+      "greeting": "Hello! I'm Christopher Jared, a passionate ",
+      "position": "Front-End developer",
+      "first": " with a focus on React. I specialize in creating dynamic and user-friendly web interfaces. My experience includes working on a variety of projects, including the development of applications like SkillsFlix and AluraGeek e-commerce. These experiences have allowed me to master HTML, CSS, JavaScript, React, and other frameworks such as Astro and Tailwind.",
+      "second": "I enjoy collaboration within cross-functional teams and have found that some of my most innovative solutions have emerged from group efforts. For instance, some projects such as the Matrix Calculator and Fruit Knight video game in this portfolio were the results of successful teamwork.",
+      "third": "Outside of coding, you can find me working out in the gym, learning and practicing a new language, or experimenting in the kitchen. I'm excited to apply my skills and passion to create exceptional web solutions. Feel free to explore my portfolio, and let's work together to build the web of tomorrow!",
+      "btn": "Read more ->"
+    },
+    "Contact": {
+      "description": "Currently avaible for work. I'm interested in full time jobs, however, if you have other request or question, don't hesitate to contact me",
+      "box": "Message me here"
+    },
+    "Layout": {
+        "titles": {
+            "index": "JarDev",
+            "projects": "JarDev | Projects",
+            "about": "JarDev | About me"
+        },
+        "descriptions": {
+            "index": "Welcome to my front-end developer portfolio. Explore my world of interactive web design and captivating user experiences. Discover how I can turn your ideas into engaging and functional websites.",
+            "projects": "Explore my collection of front-end development projects. Here, you'll find examples of responsive websites and interactive web applications I've created. Each project showcases my ability to blend creative design with robust programming.",
+            "about": "Hi!, I'm a front-end developer passionate about crafting exceptional web experiences. Learn more about my background, skills, and my commitment to staying current with the latest web development trends. I'm ready to collaborate on challenging projects and transform your ideas into visually appealing and highly functional websites."
+        }
+    },
+    "Pages": {
+      "projects": {
+            "title": "projects",
+            "description": "List of all my projects"
+        },
+      "about": {
+            "title": "about-me",
+            "description": "Get to know me better"
+        }
+    },
+    "Sections": {
+        "view": "view all->",
+        "index": {
+            "projects": "projects",
+            "skills": "skills",
+            "education": "education",
+            "about": "about-me",
+            "contact": "contact"
+        },
+        "projects": {
+            "web": "web-development",
+            "other": "other-projects"
+        },
+        "about": {
+            "aboutme": "who-am-i?",
+            "myskills": "my-skills"
+        }
+    },
+    "Footer": "Made by Christopher Jared "
+  }

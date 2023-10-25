@@ -1,4 +1,6 @@
 ---
+import { t } from "i18next";
+import { localizePath } from "astro-i18next";
 interface Props {
     // character:string,
     title: string,
@@ -18,8 +20,8 @@ const {title, viewAll, href} = Astro.props;
             <h3 class="font-medium mr-4 text-xl md:text-3xl"> { title } </h3>
             <div class="h-[1px] w-14 bg-[#C778DD] md:w-80 xl:w-96 2xl:w-[30rem]"></div>
         </div>
-        {viewAll && <a class="font-medium text-base hover:text-[#ABB2BF] md:text-2xl" href={ href } >
-            view all->
+        {viewAll && <a class="font-medium text-base hover:text-[#ABB2BF] md:text-2xl" href={ localizePath(href) } >
+            {t("Sections.view")}
         </a>}
     </div>
     <div class="flex flex-wrap gap-4 justify-center lg:gap-8">
