@@ -29,6 +29,11 @@ import tailwind from "../assets/tailwind.svg";
 import git from "../assets/git.svg";
 import fcfm from "../assets/fcfm4.webp";
 import one from "../assets/one2.webp";
+import ef from "../assets/ef-image.webp";
+
+//pdf
+import efSet from "../assets/EF-SET-Certificate.pdf";
+import onePdf from "../assets/one.pdf";
 
 changeLanguage("en");
 ---
@@ -83,8 +88,9 @@ changeLanguage("en");
 		<SkillCard img={git} tecnology='GIT' mainColor='#df4c37' secondaryColor='#df4c3733' />
 	</SectionContainer>
 	<SectionContainer title={t("Sections.index.education")} viewAll={false} href='' >
-		<EducationCard img={fcfm} year='2020' school='UANL' career={t("Education.fcfm")} />
-		<EducationCard img={one} year='2023' school='Oracle/Alura Latam' career={t("Education.one")} />
+		<EducationCard img={fcfm} year='2020' school='UANL' career={t("Education.fcfm")} button={false} />
+		<EducationCard img={one} year='2023' school='Oracle/Alura Latam' career={t("Education.one")} button src={onePdf} download="ONE-Certificate" />
+		<EducationCard img={ef} year='2023' school='EF SET' career={t("Education.ef")} button src={efSet} download="EF-SET-Certificate" />
 	</SectionContainer>
 	<SectionContainer title={t("Sections.index.about")} viewAll={false} href='/' >
 		<About showBtn linesToShow={10}/>
